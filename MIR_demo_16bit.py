@@ -28,8 +28,6 @@ import matplotlib.pyplot as plt
 global run_number
 
 
-
-
 def train(**kwargs):
     os.environ['CUDA_VISIBLE_DEVICES'] = '6'
     opt.parse(kwargs)
@@ -350,7 +348,7 @@ def help():
 
 
 if __name__ == '__main__':
-
+    print("begin training:")
     for i in range(1):
         run_number = 112601 + i
         train()
